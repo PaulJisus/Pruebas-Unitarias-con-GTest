@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.156" timestamp="2023-11-06T19:08:30.487" name="AllTests">
+  <testsuite name="TrianguloTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.094" timestamp="2023-11-06T19:08:30.522">
+    <testcase name="esValido" file="include/TrianguloTest.h" line="26" status="run" result="completed" time="0.001" timestamp="2023-11-06T19:08:30.533" classname="TrianguloTest" />
+    <testcase name="Equilatero" file="include/TrianguloTest.h" line="39" status="run" result="completed" time="0.001" timestamp="2023-11-06T19:08:30.557" classname="TrianguloTest" />
+    <testcase name="Isosceles" file="include/TrianguloTest.h" line="52" status="run" result="completed" time="0.001" timestamp="2023-11-06T19:08:30.581" classname="TrianguloTest" />
+    <testcase name="Escaleno" file="include/TrianguloTest.h" line="65" status="run" result="completed" time="0." timestamp="2023-11-06T19:08:30.604" classname="TrianguloTest" />
+  </testsuite>
+</testsuites>

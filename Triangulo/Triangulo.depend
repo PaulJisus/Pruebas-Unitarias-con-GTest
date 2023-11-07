@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1699316188 source:c:\users\koddy\desktop\google-test\triangulo\main.cpp
+	<iostream>
+	"Triangulo.h"
+	"src/Triangulo.cpp"
+	<gtest/gtest.h>
+
+1699308111 c:\users\koddy\desktop\google-test\triangulo\include\triangulo.h
+
+1699307756 source:c:\users\koddy\desktop\google-test\triangulo\src\triangulo.cpp
+	"Triangulo.h"
+
+1699307756 c:\users\koddy\desktop\google-test\triangulo\src\triangulo.cpp
+	"Triangulo.h"
+
+1699307767 source:c:\users\koddy\desktop\google-test\triangulo\src\triangulotest.cpp
+	"TrianguloTest.h"
+
+1699315702 c:\users\koddy\desktop\google-test\triangulo\include\triangulotest.h
+	"Triangulo.h"
+	<gtest/gtest.h>
+

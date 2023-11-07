@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1699232902 source:c:\users\koddy\desktop\google-test\ejemplo\main.cpp
+	<gtest/gtest.h>
+	"calc.h"
+
+1699229747 c:\users\koddy\desktop\google-test\ejemplo\include\calc.h
+
+1699229784 source:c:\users\koddy\desktop\google-test\ejemplo\src\calc.cpp
+	"calc.h"
+

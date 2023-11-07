@@ -1,0 +1,62 @@
+{
+  "tests": 4,
+  "failures": 0,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2023-11-07T09:23:07Z",
+  "time": "0.067s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TrianguloTest",
+      "tests": 4,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2023-11-07T09:23:07Z",
+      "time": "0.034s",
+      "testsuite": [
+        {
+          "name": "esValido",
+          "file": "include\/TrianguloTest.h",
+          "line": 26,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-11-07T09:23:07Z",
+          "time": "0.001s",
+          "classname": "TrianguloTest"
+        },
+        {
+          "name": "Equilatero",
+          "file": "include\/TrianguloTest.h",
+          "line": 39,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-11-07T09:23:07Z",
+          "time": "0s",
+          "classname": "TrianguloTest"
+        },
+        {
+          "name": "Isosceles",
+          "file": "include\/TrianguloTest.h",
+          "line": 52,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-11-07T09:23:07Z",
+          "time": "0s",
+          "classname": "TrianguloTest"
+        },
+        {
+          "name": "Escaleno",
+          "file": "include\/TrianguloTest.h",
+          "line": 65,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2023-11-07T09:23:07Z",
+          "time": "0s",
+          "classname": "TrianguloTest"
+        }
+      ]
+    }
+  ]
+}
