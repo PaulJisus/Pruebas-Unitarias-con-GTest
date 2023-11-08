@@ -1,9 +1,12 @@
 #ifndef TRIANGULOTEST_H
 #define TRIANGULOTEST_H
 
+#include "string"
 #include "Triangulo.h"
 //#include "src/Triangulo.cpp"
 #include <gtest/gtest.h>
+
+using namespace std;
 
 class TrianguloTest : public testing::Test
 {
@@ -36,7 +39,7 @@ TEST_F(TrianguloTest, esValido)
     EXPECT_EQ(true, n);
 }
 
-TEST_F(TrianguloTest, Equilatero)
+TEST_F(TrianguloTest, esEquilatero)
 {
     t1.setLados(21, 21, 21);
     t2.setLados(12, 12, 12);
@@ -49,7 +52,7 @@ TEST_F(TrianguloTest, Equilatero)
     EXPECT_EQ(true, n);
 }
 
-TEST_F(TrianguloTest, Isosceles)
+TEST_F(TrianguloTest, esIsosceles)
 {
     t1.setLados(7, 11, 11);
     t2.setLados(10, 12.49, 12.49);
@@ -62,7 +65,7 @@ TEST_F(TrianguloTest, Isosceles)
     EXPECT_EQ(true, n);
 }
 
-TEST_F(TrianguloTest, Escaleno)
+TEST_F(TrianguloTest, esEscaleno)
 {
     t1.setLados(5, 7, 8);
     t2.setLados(5, 6.35, 9.35);
@@ -73,6 +76,34 @@ TEST_F(TrianguloTest, Escaleno)
     EXPECT_EQ(true, n);
     n = t3.esEscaleno();
     EXPECT_EQ(true, n);
+}
+
+TEST_F(TrianguloTest, Equilatero)
+{
+    t1.setLados(5, 5, 5);
+    std::string n{t1.tipo()};
+    EXPECT_EQ("EQUILATERO", n);
+}
+
+TEST_F(TrianguloTest, Isosceles)
+{
+    t2.setLados(6, 8.58, 8.58);
+    std::string n{t2.tipo()};
+    EXPECT_EQ("ISOSCELES", n);
+}
+
+TEST_F(TrianguloTest, Escaleno)
+{
+    t3.setLados(7.36, 8, 6.4576876673);
+    std::string n{t3.tipo()};
+    EXPECT_EQ("ESCALENO", n);
+}
+
+TEST_F(TrianguloTest, Invalido)
+{
+    t1.setLados(5, 5, 12);
+    std::string n{t1.tipo()};
+    EXPECT_EQ("INVALIDO", n);
 }
 
 #endif // TRIANGULOTEST_H

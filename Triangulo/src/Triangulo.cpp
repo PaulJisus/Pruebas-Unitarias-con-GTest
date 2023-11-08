@@ -1,5 +1,8 @@
 #include "Triangulo.h"
 
+//#include "string"
+//
+//using namespace std;
 //template <typename T, typename U, typename V>
 //Triangulo<T, U, V>::Triangulo() = default;
 //
@@ -107,4 +110,18 @@
 //        return true;
 //    else
 //        return false;
+//}
+//template <typename T, typename U, typename V>
+//std::string Triangulo<T, U, V>::tipo() const
+//{
+//    std::string tmp{};
+//    if(this->esEquilatero())
+//        tmp = "EQUILATERO";
+//    else if(this->esIsosceles())
+//        tmp = "ISOSCELES";
+//    else if(this->esEscaleno())
+//        tmp = "ESCALENO";
+//    else
+//        tmp = "INVALIDO";
+//    return tmp;
 //}

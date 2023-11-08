@@ -1,6 +1,10 @@
 #ifndef TRIANGULO_H
 #define TRIANGULO_H
 
+#include "string"
+
+using namespace std;
+
 template <typename T, typename U, typename V>
 class Triangulo
 {
@@ -19,6 +23,7 @@ class Triangulo
         bool esEquilatero() const;
         bool esIsosceles() const;
         bool esEscaleno() const;
+        std::string tipo() const;
     private:
         T ladoA{};
         U ladoB{};
@@ -132,6 +137,21 @@ bool Triangulo<T, U, V>::esEscaleno() const
         return true;
     else
         return false;
+}
+
+template <typename T, typename U, typename V>
+std::string Triangulo<T, U, V>::tipo() const
+{
+    std::string tmp{};
+    if(this->esEquilatero())
+        tmp = "EQUILATERO";
+    else if(this->esIsosceles())
+        tmp = "ISOSCELES";
+    else if(this->esEscaleno())
+        tmp = "ESCALENO";
+    else
+        tmp = "INVALIDO";
+    return tmp;
 }
 
 #endif
